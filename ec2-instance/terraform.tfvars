@@ -1,5 +1,7 @@
 # ASSIGNING VALUE TO VARIABLES
-aws_owner_id       = "137112412989"
-aws_ami_name       = "amzn2-ami-kernel-5.10-hvm*"
-vpc_id             ="vpc-028fdd1fa51620054"
-public_subnet_id   ="subnet-06276b7d62bf494ec"
+vpc_name           = "vpc" 
+public_subnet_name   ="public-subnet-1"
+amzn_ami_name        = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"
+amzn_ami_owner       = "099720109477"
+movie_app_ec2_type   = "t3.medium"
+keypair_name = "talent-academy-ec2"

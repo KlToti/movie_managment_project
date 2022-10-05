@@ -1,20 +1,28 @@
-# DEFINING ALL VARIABLES
-variable "aws_owner_id" {
-  description = "Contains the Owner ID of the ami for amazon linux"
+# DEFINE VARIABLES
+variable "vpc_name" {
+  description = "The name of the VPC"
   type        = string
 }
 
-variable "aws_ami_name" {
-  description = "Name of the ami I want for my project"
+variable "public_subnet_name" {
+  description = "The name of my Public Subnet A"
   type        = string
 }
 
-variable "vpc_id" {
-    description = "Contains the vpc ID"
-    type        = string
+variable "amzn_ami_name" {
+  description = "The name of the ami"
+  type        = string
 }
 
-variable "public_subnet_id" {
-    description = "Contains the public subnet ID"
-    type        = string
+variable "amzn_ami_owner" {
+  description = "The owner id of the ami"
+  type        = string
 }
+
+
+variable "movie_app_ec2_type" {
+  description = "The type of the EC2 instance for movie app"
+  type        = string
+}
+
+variable "keypair_name" {}
